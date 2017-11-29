@@ -1,0 +1,2 @@
+XmlBeanDefinitionReader - сканирует xml и переводит в BeanDefinition'ы (объекты, хранящие
+информацию о бинах)
