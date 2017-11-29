@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TerminatorQuoterTest {
 
     @Test
-    public void sayQuoteTest() throws Exception {
+    public void sayQuote() throws Exception {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
         context.getBean(TerminatorQuoter.class).sayQuote();
     }
