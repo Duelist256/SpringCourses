@@ -1,3 +1,5 @@
+Part 1
+
 XmlBeanDefinitionReader - сканирует xml и переводит в BeanDefinition'ы (объекты, хранящие
 информацию о бинах)
 
@@ -14,3 +16,8 @@ XmlBeanDefinitionReader - сканирует xml и переводит в BeanDe
 "на лету".
 
 ApplicationListener слушает контекст Спринга.
+
+Three-phase constructor
+- Constructor
+- @PostConstruct
+- @AfterProxy
