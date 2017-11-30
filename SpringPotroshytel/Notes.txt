@@ -12,3 +12,5 @@ XmlBeanDefinitionReader - сканирует xml и переводит в BeanDe
 
 Метод Proxy.newProxyInstance() создает объект из нового класса, который он сгенерит
 "на лету".
+
+ApplicationListener слушает контекст Спринга.
