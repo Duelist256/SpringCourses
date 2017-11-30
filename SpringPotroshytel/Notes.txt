@@ -21,3 +21,10 @@ Three-phase constructor
 - Constructor
 - @PostConstruct
 - @AfterProxy
+
+Part 2
+
+BeanFactoryPostProcessor - позволяет настраивать бин дефинишены до того, как создадутся
+бины
+
+IoC Container - HashMap

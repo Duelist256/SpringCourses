@@ -8,6 +8,6 @@ public class TerminatorQuoterTest {
     @Test
     public void sayQuote() throws Exception {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
-//        context.getBean(Quoter.class).sayQuote();
+        context.getBean(Quoter.class).sayQuote();
     }
 }
