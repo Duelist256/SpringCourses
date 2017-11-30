@@ -47,3 +47,6 @@ ConfigurationClassPostProcessor - особый BFPP, который добавл
     - @ComponentScan
 
 GroovyConfig
+
+
+PropertiesBeanDefinitionReader
