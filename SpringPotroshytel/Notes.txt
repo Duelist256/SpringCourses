@@ -1,4 +1,4 @@
-Part 1
+*** Part 1 ***
 
 XmlBeanDefinitionReader - сканирует xml и переводит в BeanDefinition'ы (объекты, хранящие
 информацию о бинах)
@@ -22,9 +22,28 @@ Three-phase constructor
 - @PostConstruct
 - @AfterProxy
 
-Part 2
+*** Part 2 ***
 
 BeanFactoryPostProcessor - позволяет настраивать бин дефинишены до того, как создадутся
 бины
 
 IoC Container - HashMap
+
+@Component - сделать из класса бин
+
+ClassPathBeanDefinitionScanner - ищет бины с аннотацией Component или аннотацией, включающей
+в себя компонент
+Он не BPP и не BFPP, а ResourceLoaderAware
+Создает BeanDefinitions из классов в аннотациями @Component
+
+Конфигурация бинов через Java классы позволяет вносить какую-нибудь логику.
+@Configuration
+
+ConfigurationClassPostProcessor - особый BFPP, который добавляет BeanDefinitions от
+бинов помеченны как @Bean
+Относится также к таким аннотациям, как:
+    - @Import - импорт другой JavaConfig
+    - @ImportResource - импорт XML'а в JavaConfig
+    - @ComponentScan
+
+GroovyConfig
