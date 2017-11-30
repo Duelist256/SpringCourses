@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class ConfigTest {
     @Test
-    public void name() throws Exception {
+    public void showOnRandomPlace() throws Exception {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
         while (true) {
             context.getBean(ColorFrame.class).showOnRandomPlace();
