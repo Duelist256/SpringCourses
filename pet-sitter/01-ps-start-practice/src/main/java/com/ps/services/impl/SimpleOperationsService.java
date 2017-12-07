@@ -32,7 +32,7 @@ public class SimpleOperationsService implements OperationsService {
         response.setResponseStatus(ResponseStatus.PROPOSED);
         response.setUser(user);
         response.setDetails("This is first response");
-        response.setRequest(request);
+        request.addResponse(response);
         responseRepo.save(response);
         return response;
     }
