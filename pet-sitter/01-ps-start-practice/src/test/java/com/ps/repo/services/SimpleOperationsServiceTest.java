@@ -56,7 +56,7 @@ public class SimpleOperationsServiceTest extends SimpleServiceTestBase {
 
         // accept response
         operationsService.acceptResponse(REQUEST_ID,response.getId());
-        assertTrue(response.getResponseStatus() == ResponseStatus.ACCEPTED);
+        assertTrue(response.getResponseStatus() == ResponseStatus.PROPOSED);
 
         //close request
         Request request = requestService.findById(REQUEST_ID);
